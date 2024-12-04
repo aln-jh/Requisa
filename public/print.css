@@ -1,0 +1,140 @@
+@page {
+    size: A4;
+    margin: 5mm;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 210mm;
+    background: white;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.logo {
+    width: 150px;
+    max-width: 100%;
+    position: static;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.separador {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+}
+
+.campo-requerente,
+.motivo-requisicao,
+.grid-container,
+.assinatura,
+.assinaturas-finais {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    page-break-inside: avoid;
+}
+
+table {
+    width: 100%;
+    page-break-inside: avoid;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+
+.assinaturas-finais {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.linha-assinatura {
+    width: 250px;
+}
+
+.assinatura,
+.assinaturas-finais,
+table {
+    page-break-inside: avoid;
+}
+
+input, textarea {
+    border: 1px solid #000;
+    font-size: 10px;
+    padding: 5px;
+}
+
+* {
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+th, td {
+    background-color: white !important;
+    border: 1px solid #000;
+}
+
+.campo-requerente,
+.motivo-requisicao,
+.grid-container,
+.assinatura {
+    margin-bottom: 10px;
+}
+
+@media print {
+    .print-button,
+    .import-button {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 100%;
+        max-width: 150px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .campo-requerente input,
+    .motivo-requisicao textarea {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .grid-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assinatura {
+        width: 100%;
+        text-align: center;
+    }
+
+    .assinaturas-finais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linha-assinatura {
+        width: 100%;
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisições Banco de Horas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <div class="button-container">
+            <button onclick="window.location.href='https://assinador.iti.br/assinatura/index.xhtml'" class="import-button">Assinar via Gov</button>
+            <button onclick="window.print()" class="print-button">Imprimir</button>
+        </div>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <hr class="separador">
+    <h1>REQUERIMENTO BANCO DE HORAS</h1>
+    <div class="campo-requerente">
+        <label for="requerente">Requerente:</label>
+        <input type="text" id="requerente" name="requerente" required>
+    </div>
+    <div class="motivo-requisicao">
+        <label for="motivo">Solicito a execução de banco de horas pelo seguinte motivo:</label>
+        <textarea id="motivo" name="motivo" rows="4" required></textarea>
+    </div>
+    <div class="grid-container">
+        <table id="horasTable">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Hora Início</th>
+                    <th>Hora Final</th>
+                    <th>Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 7 linhas -->
+                <tr>
+                    <td><input type="date" class="data"></td>
+                    <td><input type="time" class="hora-inicio"></td>
+                    <td><input type="time" class="hora-fim"></td>
+                    <td class="tempo">00:00</td>
+                </tr>
+
+                <tr>
+                    <td><input type="date" class="data"></td>
+                    <td><input type="time" class="hora-inicio"></td>
+                    <td><input type="time" class="hora-fim"></td>
+                    <td class="tempo">00:00</td>
+                </tr>
+
+                <tr>
+                    <td><input type="date" class="data"></td>
+                    <td><input type="time" class="hora-inicio"></td>
+                    <td><input type="time" class="hora-fim"></td>
+                    <td class="tempo">00:00</td>
+                </tr>
+
+                <tr>
+                    <td><input type="date" class="data"></td>
+                    <td><input type="time" class="hora-inicio"></td>
+                    <td><input type="time" class="hora-fim"></td>
+                    <td class="tempo">00:00</td>
+                </tr>
+
+                <tr>
+                    <td><input type="date" class="data"></td>
+                    <td><input type="time" class="hora-inicio"></td>
+                    <td><input type="time" class="hora-fim"></td>
+                    <td class="tempo">00:00</td>
+                </tr>
+
+                <tr>
+                    <td><input type="date" class="data"></td>
+                    <td><input type="time" class="hora-inicio"></td>
+                    <td><input type="time" class="hora-fim"></td>
+                    <td class="tempo">00:00</td>
+                </tr>
+
+                <tr>
+                    <td><input type="date" class="data"></td>
+                    <td><input type="time" class="hora-inicio"></td>
+                    <td><input type="time" class="hora-fim"></td>
+                    <td class="tempo">00:00</td>
+                </tr>
+                <!-- Repita a linha acima mais 6 vezes -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align: right;"><strong>Total de Horas:</strong></td>
+                    <td id="total-horas">00:00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="assinatura">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="linha-assinatura"></div>
+        <label>Assinatura de quem autorizou</label>
+    </div>
+    <div class="grid-container">
+        <table id="resumoTable">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tempo Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 3 linhas automáticas -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="text-align: right;"><strong>Total Geral:</strong></td>
+                    <td id="total-geral">00:00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="assinaturas-finais">
+        <div class="assinatura-colaborador">
+            <div class="linha-assinatura"></div>
+            <label>Colaborador:</label>
+        </div>
+        <div class="assinatura-rh">
+            <div class="linha-assinatura"></div>
+            <label>RH:</label>
+        </div>
+    </div>
+</body>
+</html>

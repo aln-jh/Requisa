@@ -1,0 +1,277 @@
+/* Logo */
+.logo {
+    width: 150px;
+    max-width: 100%;
+    position: absolute; /* Posiciona a logo de forma absoluta */
+    top: 10px; /* 10px de distância do topo */
+    left: 10px; /* 10px de distância da esquerda */
+    z-index: 1; /* Garante que a logo fique acima do separador */
+}
+
+/* Separador */
+.separador {
+    border: none;
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+    margin-top: 100px; /* Distância de 160px abaixo da logo, ajuste conforme necessário */
+}
+
+
+/* Títulos e campos */
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Formatação dos campos */
+.campo-requerente {
+    margin: 70px;
+    padding: 10px;
+}
+
+.campo-requerente label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.campo-requerente input {
+    width: 900px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campo-requerente input:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.motivo-requisicao {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.motivo-requisicao label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.motivo-requisicao textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    line-height: 1.5;
+}
+
+.motivo-requisicao textarea:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.grid-container {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="time"] {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tempo {
+    background-color: #f9f9f9;
+}
+
+#total-horas {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.assinatura {
+    margin-left: 70px;
+    margin-top: 50px;
+    text-align: center;
+    width: 500px;
+}
+
+.linha-assinatura {
+    border-top: 1px solid #000;
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+.assinatura label {
+    font-size: 14px;
+    color: #333;
+}
+
+#resumoTable {
+    margin-top: 40px;
+    width: 50%;
+}
+
+#resumoTable th, 
+#resumoTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#resumoTable th {
+    background-color: #f2f2f2;
+}
+
+#total-geral {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.assinaturas-finais {
+    margin-left: 70px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.assinatura-colaborador,
+.assinatura-rh {
+    text-align: center;
+    width: 150px;
+}
+
+.linha-assinatura {
+    display: none;
+}
+
+.assinatura-colaborador label,
+.assinatura-rh label {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para o container dos botões */
+.button-container {
+    display: flex; /* Usar flexbox para alinhar os botões lado a lado */
+    gap: 10px; /* Espaço entre os botões */
+    margin: 20px; /* Margem ao redor do container */
+    justify-content: flex-end; /* Alinha os botões à direita */
+}
+
+/* Estilo do botão de impressão */
+.print-button {
+    padding: 12px 24px; /* Tamanho do botão */
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+.print-button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+.print-button:active {
+    transform: scale(0.95); /* Diminui ligeiramente ao clicar */
+}
+
+/* Estilo do botão de importação */
+.import-button {
+    padding: 12px 24px; /* Tamanho do botão */
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+.import-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+.import-button:active {
+    transform: scale(0.95); /* Diminui ligeiramente ao clicar */
+}
+
+/* Não mostrar os botões na impressão */
+@media print {
+    .print-button,
+    .import-button {
+        display: none; /* Esconde os botões ao imprimir */
+    }
+}
+
+/* Estilo para telas pequenas */
+@media (max-width: 600px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo {
+        margin-top: 0; /* Sem margem superior */
+        margin-bottom: 5px; /* 5px abaixo dos botões */
+        position: relative;
+        top: 10px;
+    }
+
+    .button-container {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .print-button, .import-button {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
